@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary-color: #FFBA00;
+    --primary-color: #ad4b0038;
     --secundary-color: #FFF1CC;
     --shadow-color: #CCC;
     --text-color: #FFF;
@@ -21,15 +21,15 @@ body{
 
 header{
     background-color: var(--primary-color);
-    height: 70px;
+    height: 50px;
     text-align: center;
-    line-height: 70px;
+    line-height: 50px;
     box-shadow: 0 1px 2px var(--shadow-color);
 }
 
 .header-title{
     color: black;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 main{
@@ -37,11 +37,12 @@ main{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 90%;
-    margin: 5vh auto;
+    width: 100%;
+    margin: 10vh auto;
     padding: 50px;
-    box-shadow: 2px 2px 10px var(--shadow-color);
+    box-shadow: 2px 2px 20px var(--shadow-color);
     gap: 20px;
+    background-color: #ad4b001a;
 }
 
 footer{
@@ -53,18 +54,20 @@ footer{
 }
 
 @media (max-width:480px){
-    header{
-        position:fixed;
-        width:100%;
+    body{
+        position: static;
     }
     .header-title{
         font-size: 1.5rem;
     }
-
     main{
+        display: block;
         padding: 0;
-        margin: 20px 0 0 0;
-        width:100%;
+        margin: 20px 0 0 0;     
         box-shadow: none;
+    }
+    tr{
+        display: block;
+        width: 85%;
     }
 }
