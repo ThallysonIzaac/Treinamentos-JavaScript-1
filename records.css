@@ -23,15 +23,25 @@
 }
 
 .records tr:hover{
-    background-color: var(--secundary-color);
+    background-color: var(--primary-color);
 }
 
 @media(max-width:480px){
     .records{
-        border-spacing: 5px;
+        border-spacing: 1px;
     }
     .records thead{
-        display:none;
+        display:flex;
+    }
+    .records th{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .records th#acao{
+        display: none;
     }
     .records tr{
         box-shadow: 0 1px 3px var(--shadow-color);
